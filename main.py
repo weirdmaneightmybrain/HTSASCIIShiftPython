@@ -1,3 +1,6 @@
+import urllib.request
+import certifi
+request_url = urllib.request.urlopen('https://www.hackthissite.org/missions/prog/11/', cafile=certifi.where())
 string = input("Input:")
 print(string)
 word = ""
@@ -19,3 +22,4 @@ for i in list: #
     word += str(chr(newint))
 print(newlist)
 print(word)
+print(request_url.read())
