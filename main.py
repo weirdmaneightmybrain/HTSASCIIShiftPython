@@ -1,3 +1,4 @@
+import requests
 import urllib.request
 import certifi
 request_url = urllib.request.urlopen('https://www.hackthissite.org/missions/prog/11/', cafile=certifi.where())
